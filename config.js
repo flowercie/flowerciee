@@ -44,8 +44,8 @@ window.FLOWERCIE = {
      Kalau file belum ada, website tetap normal. */
   music: {
     file: "assets/music/background.mp3", // nama file MP3
-    title: "Little Flower Day",          // judul lagu yang tampil di player
-    artist: "Flowercie",                 // nama artis / pembuat
+    title: "yours",          // judul lagu yang tampil di player
+    artist: "cecil fav song",                 // nama artis / pembuat
     volume: 0.6                          // 0 (hening) sampai 1 (maksimal)
   },
 
