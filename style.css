@@ -331,16 +331,19 @@ main{display:grid;gap:14px;margin-top:14px}
 .size-tools button:hover{background:var(--lav-soft)}
 .size-tools button:active{transform:scale(.94)}
 .size-tools output{min-width:3.4em;text-align:center;font-weight:800;color:var(--dusty-deep)}
-.tnc-card{text-align:left;margin-top:14px}
-.tnc-card .tnc-img{max-width:520px;margin-inline:auto}
-.tnc-body{font-size:calc(1rem * var(--tnc-scale,1))}
+.tnc-card{text-align:left;margin-top:14px;padding:20px 18px}
+.tnc-card .tnc-img{max-width:340px;margin:0 auto 14px}
+.tnc-body{font-size:calc(.95rem * var(--tnc-scale,1));line-height:1.5}
 .tnc-body h2{
   font-family:var(--serif);font-weight:600;font-style:italic;
-  font-size:1.35em;line-height:1.2;color:var(--dusty-deep);
-  margin:1.4em 0 .4em;
+  font-size:1.2em;line-height:1.2;color:var(--dusty-deep);
+  margin:1.1em 0 .3em;
 }
 .tnc-body h2:first-child{margin-top:0}
-.tnc-body p{white-space:pre-line;margin:0 0 .8em;overflow-wrap:anywhere;max-width:68ch}
+.tnc-body p{margin:0 0 .5em;overflow-wrap:anywhere;max-width:68ch}
+.tnc-body ul{margin:0 0 .4em;padding-left:1.15em;max-width:68ch}
+.tnc-body li{margin:.18em 0;overflow-wrap:anywhere}
+.tnc-body li::marker{color:var(--dusty)}
 .bottom-back{display:flex;justify-content:center;margin-top:18px}
 
 /* ---------- toast ---------- */
@@ -367,7 +370,7 @@ main{display:grid;gap:14px;margin-top:14px}
   .pair{grid-template-columns:1fr 1fr}
   .brand-name{font-size:1.6rem}
   .menu{left:auto;width:320px}
-  .tnc-card{padding:36px 40px}
+  .tnc-card{padding:28px 36px}
 }
 @media (min-width:1000px){
   .social-grid{grid-template-columns:1fr 1fr}

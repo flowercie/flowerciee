@@ -219,13 +219,29 @@
         h.textContent = s.title;
         tncBody.appendChild(h);
       }
-      String(s.text || "").split(/\n\s*\n/).forEach(function (para) {
-        para = para.replace(/^\s+|\s+$/g, "");
-        if (!para) return;
+      var ul = null, para = [];
+      var flushPara = function () {
+        if (!para.length) return;
         var p = document.createElement("p");
-        p.textContent = para;
+        p.textContent = para.join(" ");
         tncBody.appendChild(p);
+        para = [];
+      };
+      String(s.text || "").split(/\r?\n/).forEach(function (line) {
+        var m = line.match(/^\s*[*\u2022-]\s+(.*)$/);
+        if (m) {
+          flushPara();
+          if (!ul) { ul = document.createElement("ul"); tncBody.appendChild(ul); }
+          var li = document.createElement("li");
+          li.textContent = m[1];
+          ul.appendChild(li);
+        } else if (/^\s*$/.test(line)) {
+          flushPara(); ul = null;
+        } else {
+          ul = null; para.push(line.replace(/^\s+|\s+$/g, ""));
+        }
       });
+      flushPara();
     });
 
     var SK = "flowercie_tnc_scale";

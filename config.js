@@ -56,22 +56,42 @@ window.FLOWERCIE = {
      Hapus bagian: hapus satu blok { ... } itu.
      Teks ditulis di antara tanda ` (backtick, di sebelah angka 1 pada keyboard,
      atau tahan tombol ' di keyboard HP). Boleh banyak baris.
-     Beri satu baris kosong untuk memisahkan paragraf. */
+     Beri satu baris kosong untuk memisahkan paragraf.
+     Baris yang diawali tanda * (bintang + spasi) tampil sebagai poin berpoin. */
   tnc: {
     sections: [
       {
-        title: "1. Judul bagian pertama",
-        text: `GANTI dengan isi T&C kamu di sini.
-
-Ini paragraf kedua. Pisahkan paragraf dengan satu baris kosong.`
+        title: "01. Payment",
+        text: `* Pembayaran dilakukan di awal sebelum pesanan diproses.
+* Wajib mengirimkan bukti pembayaran setelah melakukan transaksi.
+* Kesalahan transfer akibat kelalaian customer bukan tanggung jawab seller.
+* Pesanan yang sudah dibayar tidak dapat dibatalkan secara sepihak.`
       },
       {
-        title: "2. Judul bagian kedua",
-        text: `GANTI dengan isi T&C kamu di sini.`
+        title: "02. Process",
+        text: `* Mohon bersabar selama proses pesanan berlangsung.
+* Estimasi pengerjaan mengikuti antrean dan jenis produk yang dibeli.
+* Jika membutuhkan akun cust pastikan seluruh data yang diberikan sudah benar dan sesuai.
+* Kesalahan akibat data yang diberikan customer bukan tanggung jawab seller.
+* Mohon tidak melakukan spam chat selama proses berlangsung.`
       },
       {
-        title: "3. Judul bagian ketiga",
-        text: `GANTI dengan isi T&C kamu di sini.`
+        title: "03. Warranty",
+        text: `* Garansi berlaku sesuai ketentuan produk yang dibeli.
+* Customer wajib menyertakan bukti login apabila ingin melakukan klaim garansi.
+* Klaim garansi hanya berlaku jika memenuhi syarat dan ketentuan seller.
+* Garansi tidak berlaku untuk kerusakan akibat kelalaian atau kesalahan penggunaan dari customer.`
+      },
+      {
+        title: "04. Important Note",
+        text: `* Setiap seller memiliki kebijakan dan ketentuan masing-masing.
+* Syarat pembayaran, proses, serta garansi dapat berbeda pada setiap seller.
+* Pastikan membaca dan memahami ketentuan seller sebelum melakukan transaksi.
+* Dengan melakukan pembelian, customer dianggap telah menyetujui seluruh ketentuan yang berlaku.`
+      },
+      {
+        title: "Thank you for trusting us! ♡",
+        text: `Shop happily, stay kindly, and enjoy your purchase at Flowercie.`
       }
     ]
   }
